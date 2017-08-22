@@ -1,0 +1,49 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	overflow-y: hidden;
+}
+
+body
+{
+	font-size: 54px;
+	color: #ddd;
+	line-height: 150%;
+	background-color: transparent;
+
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.button-panel
+{
+	display: flex;
+	justify-content: center;
+
+	padding: 80px;
+}
+
+button
+{
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #888;
+	background-color: #111;
+
+	padding: 1rem;
+	border: 3px solid #888;
+	border-radius: 20px;
+	margin: 0 10px;
+}
+
+.text-panel
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-grow: 1;
+
+	padding: 80px;
+}
