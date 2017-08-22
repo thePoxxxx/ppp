@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <!-- S C R I P T - L O A D I N G -->
+    <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+    <!--<script src="https://cdn.rawgit.com/AltspaceVR/aframe-altspace-component/v0.3.0/dist/aframe-altspace-component.min.js"></script>-->
+    <script src="https://sdk.altvr.com/libs/altspace.js/2.4.4/altspace.min.js"></script>
+
+      <!-- S C E N E - S E T U P -->
+      <a-scene altspace="verticalAlign: center;">
+
+
+          <!--A S S E T S - P R E L O A D -->
+          <a-assets>
+
+            <!-- L O A D - 3 D - M O D E L S -->
+            <a-asset-item id="GroundPlate" Src="3D Obj/GroundPlate.obj"></a-asset-item>
+            <a-asset-item id="Main_Body" Src="3D Obj/Main_Body.obj"></a-asset-item>
+            <a-asset-item id="Main_Stairs" Src="3D Obj/Main_Stairs.obj"></a-asset-item>
+            <a-asset-item id="Pillars_R" Src="3D Obj/Pillars_R.obj"></a-asset-item>
+            <a-asset-item id="Pillars_R2" Src="3D Obj/Pillars_R2.obj"></a-asset-item>
+            <a-asset-item id="Dachbalken" Src="3D Obj/Dachbalken.obj"></a-asset-item>
+            <a-asset-item id="Pillars_M" Src="3D Obj/Pillars_M.obj"></a-asset-item>
+            <a-asset-item id="Podest_R" Src="3D Obj/Podest_R.obj"></a-asset-item>
+            <a-asset-item id="roof" Src="3D Obj/roof.obj"></a-asset-item>
+            <a-asset-item id="Zaun_RA" Src="3D Obj/Zaun_RA.obj"></a-asset-item>
+            <a-asset-item id="Zaun_RB" Src="3D Obj/Zaun_RB.obj"></a-asset-item>
+            <a-asset-item id="Zaun_LA" Src="3D Obj/Zaun_LA.obj"></a-asset-item>
+            <a-asset-item id="Zaun_LB" Src="3D Obj/Zaun_LB.obj"></a-asset-item>
+            <a-asset-item id="Podset_L" Src="3D Obj/Podest_L2.obj"></a-asset-item>
+            <a-asset-item id="Haus" Src="3D Obj/Haus.obj"></a-asset-item>
+            <a-asset-item id="A" Src="3D Obj/BBJ.obj"></a-asset-item>
+
+            <!-- L O A D - C O L L I S I O N - M E S H E S -->
+            <a-asset-item id="Collision" Src="3D Obj/Collision_Mesh.obj"></a-asset-item>
+
+
+            <!-- L O A D - T E X T U R E S -->
+            <a-asset-item id="GroundPlate_texture" Src="3D Obj/GroundPlate.mtl"></a-asset-item>
+            <a-asset-item id="Main_Body_m" Src="3D Obj/Main_Body.mtl" ></a-asset-item>
+            <a-asset-item id="Main_Stairs_m" Src="3D Obj/Main_Stairs.mtl"></a-asset-item>
+            <a-asset-item id="test_m" Src="3D Obj/Pillars_R.mtl"></a-asset-item>
+            <a-asset-item id="test2_m" Src="3D Obj/Pillars_R2.mtl"></a-asset-item>
+            <a-asset-item id="Dachbalken_m" Src="3D Obj/Dachbalken.mtl"></a-asset-item>
+            <a-asset-item id="testM_m" Src="3D Obj/Pillars_M.mtl"></a-asset-item>
+            <a-asset-item id="Podest_m" Src="3D Obj/Podest_R.mtl"></a-asset-item>
+            <a-asset-item id="roof_m" Src="3D Obj/roof.mtl"></a-asset-item>
+            <a-asset-item id="Zaun_RA_m" Src="3D Obj/Zaun_RA.mtl"></a-asset-item>
+            <a-asset-item id="Zaun_RB_m" Src="3D Obj/Zaun_RB.mtl"></a-asset-item>
+            <a-asset-item id="Zaun_LA_m" Src="3D Obj/Zaun_LA.mtl"></a-asset-item>
+            <a-asset-item id="Zaun_LB_m" Src="3D Obj/Zaun_LB.mtl"></a-asset-item>
+            <a-asset-item id="Podest_L_m" Src="3D Obj/Podest_L2.mtl"></a-asset-item>
+            <a-asset-item id="Haus_m" Src="3D Obj/Haus.mtl"></a-asset-item>
+            <a-asset-item id="A_m" Src="3D Obj/BBJ.mtl"></a-asset-item>
+
+          </a-assets>
+
+          <!-- A S S E T - P L A C E M E N T -->
+          <!-- INGAME GEOMETRY -->
+          <a-obj-model src='#GroundPlate' mtl='#GroundPlate_texture'></a-obj-model>
+          <a-obj-model src='#Main_Body' mtl='#Main_Body_m'></a-obj-model>
+          <a-obj-model src='#Main_Stairs' mtl='#Main_Stairs_m' ></a-obj-model>
+          <a-obj-model src='#Pillars_R' mtl='#test_m'></a-obj-model>
+          <a-obj-model src='#Pillars_R2' mtl='#test2_m'></a-obj-model>
+          <a-obj-model src='#Dachbalken' mtl='#Dachbalken_m'></a-obj-model>
+          <a-obj-model src='#Pillars_M' mtl='#testM_m'></a-obj-model>
+          <a-obj-model src='#Podest_R' mtl='#Podest_m'></a-obj-model>
+          <a-obj-model src='#roof' mtl='#roof_m'></a-obj-model>
+          <a-obj-model src='#Zaun_RA' mtl='#Zaun_RA_m'></a-obj-model>
+          <a-obj-model src='#Zaun_RB' mtl='#Zaun_RB_m'></a-obj-model>
+          <a-obj-model src='#Zaun_LA' mtl='#Zaun_LA_m'></a-obj-model>
+          <a-obj-model src='#Zaun_LB' mtl='#Zaun_LB_m'></a-obj-model>
+          <a-obj-model src='#Podest_L' mtl='#Podest_L_m'></a-obj-model>
+          <a-obj-model src='#Haus' mtl='#Haus_m'></a-obj-model>
+          <a-obj-model src='#A' mtl='#A_m'></a-obj-model>
+
+
+          <!-- COLLISION -->
+          <a-obj-model src='#Collision'n-mesh-collider='type: environment; convex: false' material='transparent: true; opacity: 0' ></a-obj-model>
+
+
+
+      </a-scene>
+  </body>
+</html>
