@@ -8,7 +8,7 @@
         <script src='index.js?v=5'></script>
 
       <!-- S C E N E - S E T U P -->
-      <a-scene altspace="verticalAlign: center;" position='0 0 18' sync-system='author: AltspaceVR; app: icebreaker-app; refUrl: https://altspace-icebreaker.firebaseio.com/;'>
+      <a-scene altspace="verticalAlign: center;" sync-system='author: AltspaceVR; app: icebreaker-app; refUrl: https://altspace-icebreaker.firebaseio.com/;'>
 
 
           <!--A S S E T S - P R E L O A D  -->
@@ -62,6 +62,8 @@
 
           <!-- A S S E T - P L A C E M E N T -->
           <!-- INGAME GEOMETRY -->
+        
+        <a-entity id='Container1' position='0 0 18'>
           <a-obj-model src='#GroundPlate' mtl='#GroundPlate_texture' n-mesh-collider='type: environment; convex: false'></a-obj-model>
           <a-obj-model src='#Main_Body' mtl='#Main_Body_m' n-mesh-collider='type: environment; convex: false'></a-obj-model>
           <a-obj-model src='#Main_Stairs' mtl='#Main_Stairs_m' n-mesh-collider='type: environment; convex: false'></a-obj-model>
@@ -78,10 +80,10 @@
           <a-obj-model src='#Podest_L' mtl='#Podest_L_m' n-mesh-collider='type: environment; convex: false'></a-obj-model>
           <a-obj-model src='#Haus' mtl='#Haus_m' n-mesh-collider='type: environment; convex: false'></a-obj-model>
           <a-obj-model src='#A' mtl='#A_m' n-mesh-collider='type: environment; convex: false'></a-obj-model>
-        
+        </a-entity>
         <!-- ICEBREAKER APP CODE -->
         
-        <a-entity id='Anal' position='0 0 -29'>
+        <a-entity id='Container1' position='0 0 -29'>
         <a-entity id='sign' position='0 2 2'>
                 <a-obj-model src='#sign-obj' mtl='#sign-mtl' altspace-cursor-collider='enabled: false'></a-obj-model>
 
