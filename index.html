@@ -8,7 +8,7 @@
         <script src='index.js?v=5'></script>
 
       <!-- S C E N E - S E T U P -->
-      <a-scene altspace="verticalAlign: center;" position='0 0 19'>
+      <a-scene altspace="verticalAlign: center;" position='0 0 19' sync-system='author: AltspaceVR; app: icebreaker-app; refUrl: https://altspace-icebreaker.firebaseio.com/;'>
 
 
           <!--A S S E T S - P R E L O A D -->
@@ -31,6 +31,10 @@
             <a-asset-item id="Podset_L" Src="3D Obj/Podest_L2.obj"></a-asset-item>
             <a-asset-item id="Haus" Src="3D Obj/Haus.obj"></a-asset-item>
             <a-asset-item id="A" Src="3D Obj/BBJ.obj"></a-asset-item>
+            
+            <!-- ICEBREAKER ASSETS -->
+            <a-asset-item id='sign-obj' src='assets/sign.obj?cache-bust=1'></a-asset-item>
+            <a-asset-item id='sign-mtl' src='assets/sign.mtl'></img>
 
             <!-- L O A D - C O L L I S I O N - M E S H E S -->
             <a-asset-item id="Collision" Src="3D Obj/Collision_Mesh.obj"></a-asset-item>
@@ -74,6 +78,34 @@
           <a-obj-model src='#Podest_L' mtl='#Podest_L_m' n-mesh-collider='type: environment; convex: false'></a-obj-model>
           <a-obj-model src='#Haus' mtl='#Haus_m' n-mesh-collider='type: environment; convex: false'></a-obj-model>
           <a-obj-model src='#A' mtl='#A_m' n-mesh-collider='type: environment; convex: false'></a-obj-model>
+        
+        <!-- ICEBREAKER APP CODE -->
+        
+        <a-entity id='sign' position='0 2 -12'>
+                <a-obj-model src='#sign-obj' mtl='#sign-mtl' altspace-cursor-collider='enabled: false'></a-obj-model>
+
+                <a-entity id='qText' n-text='text: Friend Maker  Adult Edition; fontSize: 3; width: 2.8; height: 2'
+                    position='0 0 0.1' display-question='-1' sync sync-question>
+                </a-entity>
+
+                <a-box width=0.4 depth=0.1 height=0.8 position='-1.9 0 0'
+                    material='shader: flat; color: #393833' advance-question='prev'>
+                    <a-entity position='0 0 0.051' n-text='text: <; fontSize: 3;'></a-entity>
+                    <a-animation begin='mouseenter' attribute='scale' dur=150 to='1.2 1.2 1.2'></a-animation>
+                    <a-animation begin='mouseleave' attribute='scale' dur=150 to='1 1 1'></a-animation>
+                </a-box>
+                <a-box width=0.4 depth=0.1 height=0.8 position='1.9 0 0'
+                    material='shader: flat; color: #393833' advance-question='next'>
+                    <a-entity position='0 0 0.051' n-text='text: >; fontSize: 3;'></a-entity>
+                    <a-animation begin='mouseenter' attribute='scale' dur=150 to='1.2 1.2 1.2'></a-animation>
+                    <a-animation begin='mouseleave' attribute='scale' dur=150 to='1 1 1'></a-animation>
+                </a-box>
+                <a-box width=0.8 depth=0.1 height=0.3 position='0 -1.25 0'
+                    material='shader: flat; color: #393833' advance-question='random'>
+                    <a-entity position='0 -0.02 0.051' n-text='text: Random; fontSize: 2;'></a-entity>
+                    <a-animation begin='mouseenter' attribute='scale' dur=150 to='1.2 1.2 1.2'></a-animation>
+                    <a-animation begin='mouseleave' attribute='scale' dur=150 to='1 1 1'></a-animation>
+                </a-box>
 
           <!-- COLLISION 
           <a-obj-model src='#Collision'n-mesh-collider='type: environment; convex: false' material='transparent: true; opacity: 0' ></a-obj-model>
