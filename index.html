@@ -13,6 +13,10 @@
 
           <!--A S S E T S - P R E L O A D  -->
           <a-assets>
+            
+                    <!-- Enclosure-->
+        <a-entity id='xx' position="0 1 -10" rotation="0 0 0" scale="5 5 5" n-layout-browser="url: http://altspacevr.github.io/AltspaceSDK/examples/aframe/moon.html; isEnclosure: true">
+        </a-entity>
 
             <!-- L O A D - 3 D - M O D E L S -->
             <a-asset-item id="GroundPlate" Src="3D Obj/GroundPlate.obj"></a-asset-item>
@@ -64,9 +68,7 @@
           <!-- INGAME GEOMETRY -->
         
                 
-        <!-- Enclosure-->
-        <a-entity id='xx' position="0 1 -10" rotation="0 0 0" scale="5 5 5" n-layout-browser="url: http://altspacevr.github.io/AltspaceSDK/examples/aframe/moon.html; isEnclosure: true">
-        </a-entity>
+
         
         <a-entity id='Container1' position='0 0 18'>
           <a-obj-model src='#GroundPlate' mtl='#GroundPlate_texture' n-mesh-collider='type: environment; convex: false'></a-obj-model>
