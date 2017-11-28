@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <!-- S C R I P T - L O A D I N G -->
+    <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+    <!--<script src="https://cdn.rawgit.com/AltspaceVR/aframe-altspace-component/v0.3.0/dist/aframe-altspace-component.min.js"></script>-->
+    <script src="https://sdk.altvr.com/libs/altspace.js/2.4.4/altspace.min.js"></script>
+
+      <!-- S C E N E - S E T U P -->
+      <a-scene altspace="verticalAlign: center;">
+
+          <!--A S S E T S - P R E L O A D -->
+          <a-assets>
+            <!-- L O A D - 3 D - M O D E L S -->
+            <a-asset-item id="Test" Src="D.obj"></a-asset-item>
+
+            <!-- L O A D - C O L L I S I O N - M E S H E S -->
+            <!-- L O A D - T E X T U R E S -->
+            <a-asset-item id="A_m" Src="UV Checker Map.jpg"></a-asset-item>
+
+          </a-assets>
+
+          <!-- A S S E T - P L A C E M E N T -->
+          <!-- INGAME GEOMETRY -->
+          <a-obj-model src='#Test' mtl='#A_m'></a-obj-model>
+
+
+          <!-- COLLISION -->
+
+      </a-scene>
+  </body>
+</html>
