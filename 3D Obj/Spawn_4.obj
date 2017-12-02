@@ -1,5 +1,5 @@
 # 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
-# File Created: 02.12.2017 21:25:30
+# File Created: 02.12.2017 22:03:08
 
 mtllib Spawn_4.mtl
 
@@ -3010,7 +3010,7 @@ vt 0.5357 0.3602 0.0000
 # 406 texture coords
 
 g Spawn_Dach_Segment
-usemtl wire_027177088
+usemtl Material__209
 s 1
 f 379/485/434 380/486/435 381/487/436 
 f 381/487/436 382/488/434 379/485/434 
@@ -4547,7 +4547,7 @@ vt 0.2176 0.9229 0.0000
 # 421 texture coords
 
 g Spawn_Wand_Türe_Segment
-usemtl wire_027177088
+usemtl Material__30
 s 1
 f 610/891/714 611/892/715 612/893/714 
 f 612/893/714 613/894/714 610/891/714 
