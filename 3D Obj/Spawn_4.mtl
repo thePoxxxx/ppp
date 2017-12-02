@@ -1,5 +1,5 @@
 # 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
-# File Created: 01.12.2017 22:53:21
+# File Created: 02.12.2017 21:25:30
 
 newmtl Material__30
 	Ns 10.0000
@@ -28,3 +28,13 @@ newmtl Material__109
 	Ke 0.0000 0.0000 0.0000
 	map_Ka Collum.jpg
 	map_Kd Collum.jpg
+
+newmtl wire_027177088
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.1059 0.6941 0.3451
+	Kd 0.1059 0.6941 0.3451
+	Ks 0.3500 0.3500 0.3500
