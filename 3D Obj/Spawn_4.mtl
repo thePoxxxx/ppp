@@ -68,6 +68,6 @@ newmtl Material__229
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka Gelaender.jpg
-	map_Kd Gelaender.jpg
-	map_d Gelander_a.jpg
+	map_Ka Gelaender.png
+	map_Kd Gelaender.png
+	map_d Gelander_a.png
