@@ -13,11 +13,10 @@
           <a-assets>
 
             <!-- L O A D - 3 D - M O D E L S -->
-            <a-asset-item id="C" Src="3D Obj/Spawn_4.obj"></a-asset-item>
+            <a-asset-item id="A" Src="3D Obj/Spawn_4.obj"></a-asset-item>
 
             <!-- L O A D - T E X T U R E S -->
-            <a-asset-item id="C_m" Src="3D Obj/Spawn_4.mtl"></a-asset-item>
-            <a-asset-item id="A_m" Src="3D Obj/Geländer.png"></a-asset-item>
+            <a-asset-item id="A_m" Src="3D Obj/Spawn_4.mtl"></a-asset-item>
 
 
           </a-assets>
@@ -26,10 +25,10 @@
 
           <!-- S P A W N - A R E A -->
           <a-obj-model
-              src='#C'
-              mtl='#C_m'
+              src='#A'
+              mtl='#A_m'
               position="0 0.01 0"
-              n-mesh-collider='type: environment; convex: false' >
+              n-mesh-collider='type: environment; convex: true' >
           </a-obj-model>
 
           <!-- COLLISION -->
