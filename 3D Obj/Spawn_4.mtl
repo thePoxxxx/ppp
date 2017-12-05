@@ -1,5 +1,5 @@
 # 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
-# File Created: 04.12.2017 21:26:48
+# File Created: 05.12.2017 02:02:35
 
 newmtl Material__251
 	Ns 10.0000
@@ -68,5 +68,5 @@ newmtl Material__229
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka Gelaender.jpg		
-	map_Kd Gelaender.jpg
+	map_Ka Geländer.png
+	map_Kd Geländer.png
