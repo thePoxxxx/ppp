@@ -8,7 +8,7 @@
     <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
     <!--<script src="https://cdn.rawgit.com/AltspaceVR/aframe-altspace-component/v0.3.0/dist/aframe-altspace-component.min.js"></script>-->
     <script src="https://sdk.altvr.com/libs/altspace.js/2.7.1/altspace.min.js"></script>
-    <!-- <script src="http://altvr.jacobralph.org/transparent.js"></script>  4 Transparency -->
+    <script src="http://altvr.jacobralph.org/transparent.js"></script> <!--  4 Transparency -->
 
       <!-- S C E N E - S E T U P -->
          <a-scene altspace="fullspace: true;">
@@ -18,14 +18,14 @@
 ========================================================================-->
           <a-assets>
             <!-- L O A D - 3 D - M O D E L S -->
-            <a-asset-item id="A"   Src="3D Obj/Spawn_Circle.obj"></a-asset-item>
-            <a-asset-item id="B"   Src="3D Obj/Spawn_5.obj"></a-asset-item>
-            <a-asset-item id="A2"  Src="3D Obj/Railling.obj"><a-asset-item>
+            <a-asset-item id="A"   Src="3D Obj/Spawn_Circle.obj"> </a-asset-item>
+            <a-asset-item id="B"   Src="3D Obj/Spawn_5.obj">      </a-asset-item>
+            <a-asset-item id="A2"  Src="3D Obj/Railling.obj">     </a-asset-item>
 
             <!-- L O A D - T E X T U R E S -->
             <a-asset-item id="A_m"   Src="3D Obj/Spawn_Circle.mtl"></a-asset-item>
-            <a-asset-item id="B_m"   Src="3D Obj/Spawn_5.mtl"></a-asset-item>
-            <a-asset-item id="A2_m"  Src="3D Obj/Railling.mtl"><a-asset-item>
+            <a-asset-item id="B_m"   Src="3D Obj/Spawn_5.mtl">     </a-asset-item>
+            <a-asset-item id="A2_m"  Src="3D Obj/Railling.mtl">    </a-asset-item>
           </a-assets>
 
 <!--==================================================================
@@ -44,7 +44,7 @@
             src='#A2'
             mtl='#A2_m'
             position='0 0.01 0'
-            
+            transparent="true"
             n-mesh-collider='type: environment; convex: false'>
           </a-obj-model>
 
