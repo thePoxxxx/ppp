@@ -1,5 +1,5 @@
 # 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
-# File Created: 13.12.2017 01:45:19
+# File Created: 13.12.2017 16:45:03
 
 newmtl Material__109
 	Ns 10.0000
@@ -42,6 +42,20 @@ newmtl Podest
 	Ke 0.0000 0.0000 0.0000
 	map_Ka Dach.jpg
 	map_Kd Dach.jpg
+
+newmtl Material__294
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Spawn_Floor_5_3.jpg
+	map_Kd Spawn_Floor_5_3.jpg
 
 newmtl Material__30
 	Ns 10.0000
