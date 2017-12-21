@@ -1,7 +1,7 @@
 # 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
-# File Created: 18.12.2017 20:26:32
+# File Created: 22.12.2017 00:00:15
 
-newmtl Material__28
+newmtl Corridor
 	Ns 10.0000
 	Ni 1.5000
 	d 1.0000
@@ -12,36 +12,8 @@ newmtl Material__28
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka UV Checker Map.jpg
-	map_Kd UV Checker Map.jpg
-
-newmtl Material__251
-	Ns 10.0000
-	Ni 1.5000
-	d 1.0000
-	Tr 0.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.5880 0.5880 0.5880
-	Kd 0.5880 0.5880 0.5880
-	Ks 0.0000 0.0000 0.0000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka Podest.jpg
-	map_Kd Podest.jpg
-
-newmtl Door
-	Ns 10.0000
-	Ni 1.5000
-	d 1.0000
-	Tr 0.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.5880 0.5880 0.5880
-	Kd 0.5880 0.5880 0.5880
-	Ks 0.0000 0.0000 0.0000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka door.jpg
-	map_Kd door.jpg
+	map_Ka corridor.jpg
+	map_Kd corridor.jpg
 
 newmtl Treppenaufgang_textur
 	Ns 10.0000
@@ -57,7 +29,7 @@ newmtl Treppenaufgang_textur
 	map_Ka Dark.jpg
 	map_Kd Dark.jpg
 
-newmtl Podest
+newmtl Material__317
 	Ns 10.0000
 	Ni 1.5000
 	d 1.0000
@@ -68,5 +40,5 @@ newmtl Podest
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka Dach.jpg
-	map_Kd Dach.jpg
+	map_Ka Roof_Tiles_Corner.jpg
+	map_Kd Roof_Tiles_Corner.jpg
