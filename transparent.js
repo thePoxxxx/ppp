@@ -3,7 +3,7 @@ AFRAME.registerComponent('transparent', {
 	init: function() {
 		console.log("TRANSPARENT COMPONENT");
 		this.el.addEventListener('model-loaded', this.update.bind(this));
-	},
+	};
 	update: function () {
 		this.el.object3D.traverse( function(obj) {
 			console.log(obj);
