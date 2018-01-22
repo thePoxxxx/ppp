@@ -1,5 +1,5 @@
 # 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
-# File Created: 22.01.2018 14:11:37
+# File Created: 22.01.2018 14:33:55
 
 mtllib Hallway.mtl
 
@@ -49999,7 +49999,7 @@ vt 0.1558 0.8819 0.0000
 # 255 texture coords
 
 g Repeating_Segment046
-usemtl wire_113135006
+usemtl Material__887
 s off
 f 9013/12635/9044 9014/12636/9044 9015/12637/9044 
 f 9016/12638/9045 9013/12635/9045 9015/12637/9045 
@@ -50559,7 +50559,7 @@ vt 0.9028 0.5621 0.0000
 # 132 texture coords
 
 g fensterbrett012
-usemtl wire_008008136
+usemtl Material__887
 s off
 f 9175/12890/9163 9176/12891/9163 9177/12892/9163 
 f 9177/12892/9163 9178/12893/9163 9175/12890/9163 
@@ -50966,7 +50966,7 @@ vt 0.9028 0.5621 0.0000
 # 132 texture coords
 
 g fensterbrett013
-usemtl wire_008008136
+usemtl Material__887
 s off
 f 9263/13022/9182 9264/13023/9182 9265/13024/9182 
 f 9265/13024/9182 9266/13025/9182 9263/13022/9182 
