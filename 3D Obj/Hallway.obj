@@ -1,5 +1,5 @@
 # 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
-# File Created: 22.01.2018 14:33:55
+# File Created: 22.01.2018 14:38:58
 
 mtllib Hallway.mtl
 
@@ -44160,7 +44160,7 @@ vt 0.9996 0.0003 1.3008
 # 38 texture coords
 
 g Gang_Dach_Bogen048
-usemtl wire_113135006
+usemtl Roof_Tile__Flat
 s off
 f 7848/11207/8232 7849/11208/8232 7850/11209/8232 
 f 7850/11209/8232 7851/11210/8232 7848/11207/8232 
@@ -44543,7 +44543,7 @@ vt 0.9996 0.0003 1.3008
 # 38 texture coords
 
 g Gang_Dach_Bogen049
-usemtl wire_113135006
+usemtl Roof_Tile__Flat
 s off
 f 7962/11245/8304 7963/11246/8304 7964/11247/8304 
 f 7964/11247/8304 7965/11248/8304 7962/11245/8304 
