@@ -33,14 +33,15 @@
             <a-asset-item id="A2"  Src="3D Obj/Railing.obj">       </a-asset-item>
             <a-asset-item id="B"   Src="3D Obj/Outside.obj">      </a-asset-item>
             <a-asset-item id="C"   Src="3D Obj/Hallway.obj">      </a-asset-item>
-            <a-asset-item id="X"   Src="3D Obj/Stairs.obj">          </a-asset-item>
+            <a-asset-item id="X"   Src="3D Obj/Stairs.obj">        </a-asset-item>
+            <a-asset-item id="Konv"   Src="3D Obj/Konv.obj">        </a-asset-item>
 
             <!-- L O A D - T E X T U R E S -->
             <a-asset-item id="A_m"   Src="3D Obj/Spawn.mtl">      </a-asset-item>
             <a-asset-item id="A2_m"  Src="3D Obj/Railing.mtl">      </a-asset-item>
             <a-asset-item id="B_m"   Src="3D Obj/Outside.mtl">     </a-asset-item>
             <a-asset-item id="C_m"   Src="3D Obj/Hallway.mtl">     </a-asset-item>
-            <a-asset-item id="X_m"   Src="3D Obj/Stairs.mtl">       </a-asset-item>
+            <a-asset-item id="Konv_m"   Src="3D Obj/Konv.mtl">      </a-asset-item>
 
           </a-assets>
 
@@ -84,6 +85,15 @@
           <a-obj-model
             src='#X'
             mtl='#X_m'
+            position="0 0.01 0"
+            n-mesh-collider='type: environment; convex: false'>
+          </a-obj-model>
+
+
+          <!-- K O N V E R E N C E - R O O M -->
+          <a-obj-model
+            src='#Konv'
+            mtl='#Konv_m'
             position="0 0.01 0"
             n-mesh-collider='type: environment; convex: false'>
           </a-obj-model>
