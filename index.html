@@ -48,6 +48,8 @@
             <a-asset-item id="C"   Src="3D Obj/Hallway.obj">      </a-asset-item>
             <a-asset-item id="X"   Src="3D Obj/Stairs.obj">        </a-asset-item>
             <a-asset-item id="Konv"   Src="3D Obj/Konv.obj">        </a-asset-item>
+            <a-asset-item id="Blocks"   Src="3D Obj/Blocks.obj">        </a-asset-item>
+
 
             <!-- L O A D - T E X T U R E S -->
             <a-asset-item id="A_m"   Src="3D Obj/Spawn.mtl">      </a-asset-item>
@@ -105,13 +107,12 @@
             n-mesh-collider='type: environment; convex: false'>
           </a-obj-model>
 
-          <!-- P L A Z A
+          <!-- P L A Z A -->
           <a-obj-model
-            src='#B'
-            mtl='#B_m'
-            position="0 0.01 0"
+            src='#Blocks'
+            position="0 0 0"
             n-mesh-collider='type: environment; convex: false'>
-          </a-obj-model>-->
+          </a-obj-model>
 
           <!-- S T A I R S -->
           <a-obj-model
