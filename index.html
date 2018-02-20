@@ -37,7 +37,7 @@
       <a-scene altspace="fullspace: true;">
 
           <!--====================================================================
-          =============== L O A D I N G - I N - A S S E T S  =====================
+          =============== L O A D I N G - O B J - A S S E T S ====================
           =====================================================================-->
           <a-assets>
 
@@ -57,6 +57,14 @@
             <a-asset-item id="X_m"   Src="3D Obj/Stairs.mtl">        </a-asset-item>
             <a-asset-item id="Konv_m"   Src="3D Obj/Konv.mtl">      </a-asset-item>
 
+
+            <!--====================================================================
+            =============== L O A D I N G - G L T F - A S S E T S ==================
+            =====================================================================-->
+
+            <!-- G L T F - L O A D I N G -->
+            <a-asset-item id="Test" src="3D Obj/Blocks.gltf"></a-asset-item>
+
           </a-assets>
 
 
@@ -66,6 +74,11 @@
           ====================================================================-->
 
 
+          <!-- T E S T I N G - G L T F - M O D E L -->
+          <a-entity
+            gltf-model="#Test"
+            position= "0 0 0">
+          </a-entity>
 
 
           <!-- S P A W N - A R E A -->
@@ -100,7 +113,7 @@
             n-mesh-collider='type: environment; convex: false'>
           </a-obj-model>-->
 
-          <!-- T E S T -->
+          <!-- S T A I R S -->
           <a-obj-model
             src='#X'
             mtl='#X_m'
