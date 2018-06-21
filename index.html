@@ -32,6 +32,7 @@
             <!-- L O A D - 3 D - M O D E L S -->
             <a-asset-item id="A"        Src="3D Obj/Spawn.obj">         </a-asset-item>
             <a-asset-item id="A2"       Src="3D Obj/Railing.obj">       </a-asset-item>
+            <a-asset-item id="A666"     Src="3D Obj/Table.obj">         </a-asset-item>
             <!--<a-asset-item id="B"        Src="3D Obj/Outside.obj">       </a-asset-item>
             <a-asset-item id="C"        Src="3D Obj/Hallway.obj">       </a-asset-item>
             <a-asset-item id="X"        Src="3D Obj/Stairs.obj">        </a-asset-item>
@@ -113,14 +114,21 @@
                 n-mesh-collider='type: environment; convex: false'>
           </a-obj-model>
 
-          <!-- E N C L O S U R E  01
+          <!-- T A B L E -->
+          <a-obj-model
+                src='#A666'
+                position="0 0.01 0"
+                n-mesh-collider='type: environment; convex: false'>
+          </a-obj-model>
+
+          E N C L O S U R E  01
           <a-entity
                   id='VideoPlayer'
                   position="1 3 16.25"
                   rotation="0 182.27 0"
                   scale="4.5 4"
                   n-layout-browser="url:https://video-jukebox.firebaseapp.com; isEnclosure: false">
-          </a-entity>-->
+          </a-entity>
 
           <!-- E N C L O S U R E  02-->
           <script type="text/javascript">
