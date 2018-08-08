@@ -7,8 +7,8 @@
 
     <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
     <script src="https://sdk.altvr.com/libs/altspace.js/2.8.2/altspace.min.js"></script>
-    <!--<script src="https://pfire.jacobralph.org/transparency.js"></script>
-    <script src="js/transparent2.js"></script-->
+    <!--<script src="https://pfire.jacobralph.org/transparency.js"></script>-->
+    <script src="js/transparent2.js"></script>
   </head>
 
 <!--
@@ -46,15 +46,13 @@
             <a-asset-item id="C_m"       Src="3D Obj/Hallway.mtl">      </a-asset-item>
             <a-asset-item id="X_m"       Src="3D Obj/Stairs2.mtl">       </a-asset-item>
             <a-asset-item id="F_m"       Src="3D Obj/floor.mtl">        </a-asset-item>
-
-
           </a-assets>
 
             <!--==================================================================
             ================== A S S E T - P L A C E M E N T =====================
             ====================================================================-->
 
-          <!-- S P A W N - A R E A
+          <!-- S P A W N - A R E A -->
           <a-obj-model
                   src='#A'
                   mtl='#A_m'
@@ -70,14 +68,21 @@
                 n-mesh-collider='type: environment; convex: true'>
           </a-obj-model>
 
-          <!-- C O R R I D O R S
+          <!-- F L O O R -->
+          <a-obj-model
+                src="#F"
+                mtl="F_m"
+                position="0 0.01 0"
+                n-mesh-collider="type: environment; convex: false">
+          </a-obj-model>
+
+          <!-- C O R R I D O R S -->
           <a-obj-model
                 src='#C'
                 mtl='#C_m'
                 position="0 0.01 0"
                 n-mesh-collider='type: environment; convex: false'>
           </a-obj-model>
-
 
           <!-- S T A I R S -->
           <a-obj-model
@@ -87,12 +92,6 @@
                 n-mesh-collider='type: environment; convex: false'>
           </a-obj-model>
 
-          <!-- F L O O R
-          <a-obj-model
-                  src='#F'
-                  mtl='#F_m'
-                  position="0 0.01 0"
-          </a-obj-model>
 
           <!-- E N C L O S U R E  01
           <a-entity
@@ -101,8 +100,7 @@
                   rotation="0 182.27 0"
                   scale="4.5 4"
                   n-layout-browser="url:https://video-jukebox.firebaseapp.com/index.html?disableVoting=true&disableDownvoting=true&hidePlaylist=true&hideSearch=true&initialPlaylist=PL24BC3A29B1293899&room=VRSynagogue1234; isEnclosure: true">
-          </a-entity>
-
+          </a-entity>-->
 
       </a-scene>
   </body>
