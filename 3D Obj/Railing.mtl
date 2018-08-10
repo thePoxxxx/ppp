@@ -12,5 +12,5 @@ newmtl railing
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka Geländer.png
-	map_Kd Geländer.png
+	map_Ka Gelaender.png
+	map_Kd Gelaender.png
