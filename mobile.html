@@ -7,6 +7,18 @@
   </head>
 
     <body>
+
+      <!--====================================================================
+      =============== L O A D I N G - V I D E O - J U K E B O X===============
+      =====================================================================-->
+      <a-entity
+            id='VideoPlayer'
+            position="0.47 3.75 16"
+            rotation="0 182.27 0"
+            scale="7.25 6.75"
+            n-layout-browser="url:https://video-jukebox.firebaseapp.com/index.html?disableVoting=true&disableDownvoting=true&hidePlaylist=true&hideSearch=true&initialPlaylist=PL24BC3A29B1293899&room=VRSynagogue1234; isEnclosure: true">
+      </a-entity>
+
         <!--Rayyah will never read this :3  -->
 
         <!-- S C E N E - S E T U P -->
@@ -65,14 +77,6 @@
                   n-mesh-collider='type: environment; convex: false'>
             </a-obj-model>
 
-            <!-- E N C L O S U R E  01-->
-            <a-entity
-                    id='VideoPlayer'
-                    position="0.47 3.75 16"
-                    rotation="0 182.27 0"
-                    scale="7.25 6.75"
-                    n-layout-browser="url:https://video-jukebox.firebaseapp.com/index.html?disableVoting=true&disableDownvoting=true&hidePlaylist=true&hideSearch=true&initialPlaylist=PL24BC3A29B1293899&room=VRSynagogue1234; isEnclosure: true">
-            </a-entity>
       </a-scene>
 
 
