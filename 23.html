@@ -1,27 +1,59 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
-    <meta charset="utf-8">
-    <title>"xxx"</title>
     <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
-    <script src="https://sdk.altvr.com/libs/altspace.js/2.9.0/altspace.min.js"></script>
-    <script src="https://pfire.jacobralph.org/transparency.js"></script>
+    <!--<script src="https://cdn.rawgit.com/AltspaceVR/aframe-altspace-component/v0.3.0/dist/aframe-altspace-component.min.js"></script>-->
+    <script src="https://sdk.altvr.com/libs/altspace.js/2.7.1/altspace.min.js"></script>
+    <script src="js/transparent2.js"></script>
   </head>
-  <body>
-      <a-scene altspace="fullspace: true;">
-        <script type="javascript">
-          let is_mobile = (navigator.userAgent||navigator.vendor||window.opera).indexOf('Mobile')>-1;
-          let modelUrl = 'Obj/Table.obj';
-          if(is_mobile)modelUrl = '<url of your mobile model>';
-        </script>
 
-        <a-obj-model
-                src='#A'
-                position="0 0.01 0"
-                n-mesh-collider='type: environment; convex: false'>
-        </a-obj-model>
+    <body>
 
+
+
+        <!--Rayyah will never read this :3  -->
+        <!-- S C E N E - S E T U P -->
+        <a-scene altspace="fullspace: true;">
+
+            <!--====================================================================
+            =============== L O A D I N G - V I D E O - J U K E B O X===============
+            =====================================================================-->
+            <a-entity
+                  id='VideoPlayer'
+                  position="0.47 3.75 16"
+                  rotation="0 182.27 0"
+                  scale="7.25 6.75"
+                  n-layout-browser="url:https://video-jukebox.firebaseapp.com/index.html?disableVoting=true&disableDownvoting=true&hidePlaylist=true&hideSearch=true&initialPlaylist=PL24BC3A29B1293899&room=VRSynagogue1234; isEnclosure: true">
+            </a-entity>
+
+            <!--====================================================================
+            =============== L O A D I N G - O B J - A S S E T S ====================
+            =====================================================================-->
+            <a-assets>
+
+              <!-- L O A D - 3 D - M O D E L S-->
+              <a-asset-item id="A"        Src="<script type="javascript">
+                let is_mobile = (navigator.userAgent||navigator.vendor||window.opera).indexOf('Mobile')>-1;
+                let modelUrl = 'Obj/Table.obj';
+                if(is_mobile)modelUrl = '<url of your mobile model>';
+              </script>">         </a-asset-item>
+
+
+              <!-- L O A D - T E X T U R E S-->
+              <a-asset-item id="A_m"       Src="LP 3D/Spawn.mtl">        </a-asset-item>
+
+            </a-assets>
+
+
+            <a-obj-model
+                    src='#A'
+                    mtl='#A_m'
+                    position="0 0.01 0"
+                    n-mesh-collider='type: environment; convex: false'>
+            </a-obj-model>
 
       </a-scene>
+
+
   </body>
 </html>
