@@ -8,10 +8,20 @@
     <script src="https://pfire.jacobralph.org/transparency.js"></script>
   </head>
   <body>
-    <script type="text/javascript">
-    let is_mobile = (navigator.userAgent||navigator.vendor||window.opera).indexOf('Mobile')>-1;
-    let modelUrl = '<a-asset-item id="A"        Src="LP 3D/Spawn.obj">         </a-asset-item>;'
-    if(is_mobile)modelUrl = '<url of your mobile model>';
-    </script>
+      <a-scene altspace="fullspace: true;">
+        <script type="text/javascript">
+          let is_mobile = (navigator.userAgent||navigator.vendor||window.opera).indexOf('Mobile')>-1;
+          let modelUrl = '<a-asset-item id="A"        Src="LP 3D/Spawn.obj">         </a-asset-item>;'
+          if(is_mobile)modelUrl = '<url of your mobile model>';
+        </script>
+
+        <a-obj-model
+                src='#A'
+                position="0 0.01 0"
+                n-mesh-collider='type: environment; convex: false'>
+        </a-obj-model>
+
+
+      </a-scene>
   </body>
 </html>
