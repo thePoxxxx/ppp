@@ -26,31 +26,22 @@
                   n-layout-browser="url:https://video-jukebox.firebaseapp.com/index.html?disableVoting=true&disableDownvoting=true&hidePlaylist=true&hideSearch=true&initialPlaylist=PL24BC3A29B1293899&room=VRSynagogue1234; isEnclosure: true">
             </a-entity>
 
+
             <!--====================================================================
             =============== L O A D I N G - O B J - A S S E T S ====================
             =====================================================================-->
             <a-assets>
+            	<script type="text/javascript">
+                //Check if user is on mobile, save platform type string to variable
+                let platform = (navigator.userAgent||navigator.vendor||window.opera).indexOf("mobile") !== -1 ? 'mobile' : 'desktop';
 
-              <!-- L O A D - 3 D - M O D E L S-->
-              <a-asset-item id="A">
-                <script type="javascript">
-                  let is_mobile = (navigator.userAgent||navigator.vendor||window.opera).indexOf('Mobile')>-1;
-                  let modelUrl = <Obj/Hallway.obj>;
-                  if(is_mobile)modelUrl = <Obj/Hallway.obj>;
-                </script>
-              </a-asset-item>
+                //Write HTML to document with the platform incorporated into the src path
+                document.write('<a-asset-item id="A" src="assets/' + platform + '/models/Spawn.obj"></a-asset-item>');
 
+                //MTLs, or you can put the MTL files right next to their associated OBJ file. Either way will work, more a matter of how you want to organize.
+                document.write('<a-asset-item id="A_m" src="assets/' + platform + '/textures/Spawn.mtl"></a-asset-item>');
 
-              <!-- L O A D - T E X T U R E S-->
-              <a-asset-item id="A_m">
-                <script type="javascript">
-                  let is_mobile = (navigator.userAgent||navigator.vendor||window.opera).indexOf('Mobile')>-1;
-                  let modelUrl = <Obj/Hallway.mtl>;
-                  if(is_mobile)modelUrl = <Obj/Hallway.mtl>;
-                </script>
-              </a-asset-item>
-
-
+              </script>
             </a-assets>
 
 
