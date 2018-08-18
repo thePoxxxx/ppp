@@ -31,21 +31,27 @@
             =====================================================================-->
             <a-assets>
 
-              <!-- L O A D - 3 D - M O D E L S-->
-              <a-asset-item id="A"        Src="LP 3D/Spawn.obj">         </a-asset-item>
-              <a-asset-item id="A2"       Src="LP 3D/Railing.obj">       </a-asset-item>
-              <a-asset-item id="C"        Src="LP 3D/Hallway.obj">       </a-asset-item>
-              <a-asset-item id="X"        Src="3D Obj/Stairs2.obj">        </a-asset-item>
-              <a-asset-item id="F"        Src="3D Obj/floor.obj">        </a-asset-item>
-              <!--<a-asset-item id="Blocks"   Src="3D Obj/Blocks.obj">    </a-asset-item>-->
+              <a-assets>
+              	<script type="text/javascript">
+                  //Check if user is on mobile, save platform type string to variable
+                  let platform = (navigator.userAgent||navigator.vendor||window.opera).indexOf("mobile") !== -1 ? 'mobile' : 'desktop';
 
-              <!-- L O A D - T E X T U R E S-->
-              <a-asset-item id="A_m"       Src="LP 3D/Spawn.mtl">        </a-asset-item>
-              <a-asset-item id="A2_m"      Src="LP 3D/Railing.mtl">      </a-asset-item>
-              <a-asset-item id="C_m"       Src="LP 3D/Hallway.mtl">      </a-asset-item>
-              <a-asset-item id="X_m"       Src="3D Obj/Stairs2.mtl">       </a-asset-item>
-              <a-asset-item id="F_m"       Src="3D Obj/floor.mtl">        </a-asset-item>
-            </a-assets>
+                  //<!-- L O A D - 3 D - M O D E L S-->
+                  document.write('<a-asset-item id="A" src="assets/' + platform + '/models/Spawn.obj"></a-asset-item>');
+                  document.write('<a-asset-item id="A2" src="assets/' + platform + '/models//Railing.obj"></a-asset-item>');
+                  document.write('<a-asset-item id="C" src="assets/' + platform + '/models/Hallway.obj"></a-asset-item>');
+                  document.write('<a-asset-item id="X" src="assets/' + platform + '/models/Stairs2.obj"></a-asset-item>');
+                  document.write('<a-asset-item id="F" src="assets/' + platform + '/models/floor.obj"></a-asset-item>');
+
+                  //<!-- L O A D - T E X T U R E S-->
+                  document.write('<a-asset-item id="A_m" src="assets/' + platform + '/models/Spawn.mtl"></a-asset-item>');
+                  document.write('<a-asset-item id="A2_m" src="assets/' + platform + '/models//Railing.mtl"></a-asset-item>');
+                  document.write('<a-asset-item id="C_m" src="assets/' + platform + '/models/Hallway.mtl"></a-asset-item>');
+                  document.write('<a-asset-item id="X_m" src="assets/' + platform + '/models/Stairs2.mtl"></a-asset-item>');
+                  document.write('<a-asset-item id="F_m" src="assets/' + platform + '/models/floor.mtl"></a-asset-item>');
+
+                </script>
+              </a-assets>
 
 
             <a-obj-model
