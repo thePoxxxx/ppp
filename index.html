@@ -40,6 +40,7 @@
                   document.write('<a-asset-item id="C" src="assets/' + platform + '/models/Hallway.obj"></a-asset-item>');
                   document.write('<a-asset-item id="X" src="assets/' + platform + '/models/Stairs2.obj"></a-asset-item>');
                   document.write('<a-asset-item id="F" src="assets/' + platform + '/models/floor.obj"></a-asset-item>');
+                  document.write('<a-asset-item id="B" src="assets/' + platform + '/models/Temple.obj"></a-asset-item>');
 
                   //<!-- L O A D - T E X T U R E S-->
                   document.write('<a-asset-item id="A_m" src="assets/' + platform + '/models/Spawn.mtl"></a-asset-item>');
@@ -47,10 +48,16 @@
                   document.write('<a-asset-item id="C_m" src="assets/' + platform + '/models/Hallway.mtl"></a-asset-item>');
                   document.write('<a-asset-item id="X_m" src="assets/' + platform + '/models/Stairs2.mtl"></a-asset-item>');
                   document.write('<a-asset-item id="F_m" src="assets/' + platform + '/models/floor.mtl"></a-asset-item>');
+                  document.write('<a-asset-item id="B_m" src="assets/' + platform + '/models/Temple.mtl"></a-asset-item>');
 
                 </script>
               </a-assets>
 
+
+
+            <!--==================================================================
+            ================== A S S E T - P L A C E M E N T =====================
+            ====================================================================-->
 
             <a-obj-model
                     src='#A'
@@ -91,6 +98,13 @@
                   n-mesh-collider='type: environment; convex: false'>
             </a-obj-model>
 
+
+            <a-obj-model
+                  src='#B'
+                  mtl='#B_m'
+                  position="0 0.01 0"
+                  n-mesh-collider='type: environment; convex: false'>
+            </a-obj-model>
 
       </a-scene>
 
