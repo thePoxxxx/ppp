@@ -1,7 +1,21 @@
 # 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
-# File Created: 11.08.2018 17:58:08
+# File Created: 09.08.2018 20:56:44
 
-newmtl Material__1154
+newmtl Material__109
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Collum.jpg
+	map_Kd Collum.jpg
+
+newmtl Material__251
 	Ns 10.0000
 	Ni 1.5000
 	d 1.0000
@@ -14,62 +28,6 @@ newmtl Material__1154
 	Ke 0.0000 0.0000 0.0000
 	map_Ka Podest.jpg
 	map_Kd Podest.jpg
-
-newmtl Material__1151
-	Ns 10.0000
-	Ni 1.5000
-	d 1.0000
-	Tr 0.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.5880 0.5880 0.5880
-	Kd 0.5880 0.5880 0.5880
-	Ks 0.0000 0.0000 0.0000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka Spawn_Floor_LowPoly.jpg
-	map_Kd Spawn_Floor_LowPoly.jpg
-
-newmtl Material__1153
-	Ns 10.0000
-	Ni 1.5000
-	d 1.0000
-	Tr 0.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.5880 0.5880 0.5880
-	Kd 0.5880 0.5880 0.5880
-	Ks 0.0000 0.0000 0.0000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka Collum_LP.jpg
-	map_Kd Collum_LP.jpg
-
-newmtl Material__1150
-	Ns 10.0000
-	Ni 1.5000
-	d 1.0000
-	Tr 0.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.5880 0.5880 0.5880
-	Kd 0.5880 0.5880 0.5880
-	Ks 0.0000 0.0000 0.0000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka Dach_LP.jpg
-	map_Kd Dach_LP.jpg
-
-newmtl Material__1196
-	Ns 10.0000
-	Ni 1.5000
-	d 1.0000
-	Tr 0.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.5880 0.5880 0.5880
-	Kd 0.5880 0.5880 0.5880
-	Ks 0.0000 0.0000 0.0000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka Tiles.jpg
-	map_Kd Tiles.jpg
 
 newmtl Podest
 	Ns 10.0000
@@ -85,7 +43,7 @@ newmtl Podest
 	map_Ka Dach.jpg
 	map_Kd Dach.jpg
 
-newmtl Material__1198
+newmtl Material__294
 	Ns 10.0000
 	Ni 1.5000
 	d 1.0000
@@ -96,5 +54,33 @@ newmtl Material__1198
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka door_LP.jpg
-	map_Kd door_LP.jpg
+	map_Ka Spawn_Floor_5_3.jpg
+	map_Kd Spawn_Floor_5_3.jpg
+
+newmtl Door
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka door.jpg
+	map_Kd door.jpg
+
+newmtl Material__1109
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Tiles.jpg
+	map_Kd Tiles.jpg
